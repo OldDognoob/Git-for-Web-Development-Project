@@ -58,7 +58,7 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
     The id selector uses the id attribute of the HTML element, and is defined with a "#". 
 
     8. What elements can I add an id to? 
-    
+     you can add id to the image element <img ... id="image" name="image'>
 
     9. How many times can I use the same id on a page? 
      you can give an id value to one and only element as this will be the unique one in the whole page. 
@@ -68,6 +68,7 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
     11. What elements can I add a class to? 
 
     12. How many times can I use the same class on a page? 
+       we can use the same class more than once as long as it is valid. An invalid however document means that have duplicated ids.
 
     13. How do I get my link to open in a new tab?
          hold down the control key button or the commandkey in Mac operator computer to open a new link in a new tab.
@@ -82,58 +83,63 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
         the section defines chapters headers footers
         the div doesnt have any meaning does not defien a section in HTML
     17. What is CSS used for? 
-         Cascading Style Sheet 
+         Cascading Style Sheet is the language to describe the presentation of web pages , including colors, layouts and fonts. It allow as to adapt the presentation to different types of devices, like tablets, mobiles etc.
 
     18. How to we select an element? Example - every h2 on the page
 
+       Each HTML element—<h1>, <p>, <li>, <body>and any other HTML element can be selected with CSS by using the tag name without the angle brackets (< and >). For example, you can select all of the <p> tags in your webpage by using the element selector p. 
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+         
+         the class selector is a name proceded by a period (.) and an ID selector is a name proceded by a (#). The difference between them is that id can be used to identify one element and class can be used to identify more than one.
 
     20. How do we select classes in CSS?
-
+        
+        class selector selects elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the name of the class.
 
     21. How do we select a p element with a single class of “human””?
-
+       p.human
 
     22. What is a parent child selector? When would this be useful? 
    
-     parent selector
+      Means selecting child elements inside of parent-parent selector.
 
     23. How do you select all links within a div with the class of sidebar?
-
+        you use <div class="the class" and seperated them by space>
 
     24. What is a pseudo selector?
-
+       a pseudo selector is a selector element with a specific state.
 
 
     25. What do we use the change the spacing between lines?
-
+       Using the Line-Height attribute.
 
     26. What do we use to change the spacing between letters?
-
+        Using letter-spacing increase or decrease the space between the characters.
 
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
 
 
     28. How do I add a 1px border around my div that is dotted and black?
-
+        < div style="border: dotted 1px black" id="mydiv">
 
     29. How do I select everything on the page? 
-
+        Press “Ctrl-A” on the keyboard to highlight the entire page.
 
     30. How do I write a comment in CSS?
-
+        using ctrl + / we make a comment in css
 
     31. How do I find out what file I am in, when I am using the command line? 
-
+         ls to see were we are and then cd to find the folder
 
     32. Using the command line - how do I see a list of files/folders in my current folder?
-
+        ls 
 
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
-
+        in the command line type del/f filename the file you want to delete using commas.
 
     34. Why should I use version control? 
-
+        Version control helps team to solve their problems, tracking down the changes and helping prevent conflicts.
     35. How often should I commit to github?
 
        we need to commit our code regularly and meaningfully. This helps both as and our TL leader.
@@ -156,15 +162,74 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
 ## Stretch
 Stretch Review questions: 
     1. What is the difference between an inline element and a block element?
+
+    Block-level elements take up all of the available space within their parent container.
+
+    Inline elements can exist within block-level elements.
+
     2. What happens when an element is positioned absolutely? 
+
+    It is positioned automatically to the starting point (top-left corner) of its parent element.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+     
+     1.The <div> element is a diplay block by default element.
+     2.The <header> element is a diplay block by default element.
+     3.The <footer> element is a diplay block by default element.  
+
+     1. The <button> element is display inline by default element.
+     2. The <input> element is display inline by default element.
+
+     1. The <span> element is a display inline-block by default element.
+
     5. In your own words, explain the box model. What is the fix for the box model? 
+
+    The box model is the primary layout of everything in the web. It describes the layout in rectangular boxes, which every sinlge element is in a box. Using the box model, web developers can use a lot of varieties of properties, such as padding, margin, borders to create other pages.
 Stretch Git Tasks
 - [ ] While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
+
   - [ ] Research and understand what a `merge conflict` is and how to resolve it.
+       To resolve a merge conflict caused by competing line changes, you must choose which changes to incorporate from the different branches in a new commit.
+
+       You must resolve this merge conflict with a new commit before you can merge these branches.
+       1.Open Git Bash.
+       2.Navigate into the local Git repository that has the merge conflict.
+       (cd repository-name).
+       3.Generate a list of the files affected by the merge conflict.
+       4.Open your favorite text editor such as VSCode and navigate to the file that has merge conflicts.
+       5.Search the file for the conflict, to see the beginning of the merge conflict in your file.
+       6.Devcide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. 
+       7.Add your changes (git add .)
+       8.git commit -m'message initial changes'
+       9.git push origin firstName lastName.
+
+
   - [ ] Research the Git commands `pull`, `rebase`, `merge`. These commands will allow you to bring in changes that other developers push to the master branch.
+
+   Git pull
+   The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
+   Git Rebase
+   Means changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base.
+   Git Merge
+    Means that git merge is  used in conjunction with git checkout for selecting the current branch and git branch -d for deleting the obsolete target branch.
+
   - [ ] Research the Git commands `reset `, `revert`, `clean`. These commands will allow you to go back and amends previous commits you have made.
+
+     Git Reset
+
+
+
+     Git Revert
+    The git revert command is used for undoing changes to a repository's commit history. Other 'undo' commands like, git checkout and git reset , move the HEAD and branch ref pointers to a specified commit. Git revert also takes a specified commit, however, git revert does not move ref pointers to this commit.
+     Git Clean
+      Remove only files ignored by git. This may be useful to rebuild everything from scratch, but keep manually created files.
+    To remove directories yu follow the steps:
+    1.To remove directories, run git clean -f -d or git clean -fd.
+    2.To remove ignored files, run git clean -f -X or git clean -fX.
+    3.To remove ignored and non-ignored files, run git clean -f -x or git clean -fx.
 
 - [ ] Research and set up a Graphical User Interface (GUI) Git console. 
 
