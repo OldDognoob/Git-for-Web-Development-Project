@@ -47,18 +47,19 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
 
     5. Name two tags that have required attributes
 
-      The img tag and the Header1 tags
+      The img tag and the <a> tags
 
     6. What do we put in the head of our HTML document? 
 
-      The HTML tag and the body tag
+      Inside we have <meta> tags & the <title> tag
      
     7. What is an id? 
 
     The id selector uses the id attribute of the HTML element, and is defined with a "#". 
 
     8. What elements can I add an id to? 
-     you can add id to the image element <img ... id="image" name="image'>
+       You can add id to any element.
+     
 
     9. How many times can I use the same id on a page? 
      you can give an id value to one and only element as this will be the unique one in the whole page. 
@@ -66,22 +67,25 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
     10. What is a class? 
        A class is a blueprint that defines the variables and the methods common to all objects of a certain kind.
     11. What elements can I add a class to? 
-
+        You can add class to any element.
     12. How many times can I use the same class on a page? 
        we can use the same class more than once as long as it is valid. An invalid however document means that have duplicated ids.
 
     13. How do I get my link to open in a new tab?
-         hold down the control key button or the commandkey in Mac operator computer to open a new link in a new tab.
+         In an anchor element insert a target attribute such as target="_blank".
     14. What is the alt attribute used for? 
        the alt attribute specifies an alternate text for an image, if the image cannot be displayed.
        It provides alternative information of an image if the user for some reason it cannot displayed it.
 
     15. How do I reference an id?
-       in order to reference id , we must specify the unique id for an html element, because this element performssome certain tasks within the HTML document.
+         #
 
     16. What is the difference between a section and a div
-        the section defines chapters headers footers
-        the div doesnt have any meaning does not defien a section in HTML
+        
+        The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. ... The <div> tag defines a division or a section in an HTML document. The <div> tag is used to group block-elements to format them with CSS.
+
+        
+
     17. What is CSS used for? 
          Cascading Style Sheet is the language to describe the presentation of web pages , including colors, layouts and fonts. It allow as to adapt the presentation to different types of devices, like tablets, mobiles etc.
 
@@ -105,7 +109,8 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
       Means selecting child elements inside of parent-parent selector.
 
     23. How do you select all links within a div with the class of sidebar?
-        you use <div class="the class" and seperated them by space>
+
+       div a.sidebar
 
     24. What is a pseudo selector?
        a pseudo selector is a selector element with a specific state.
@@ -118,19 +123,26 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
         Using letter-spacing increase or decrease the space between the characters.
 
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        
+        div.a {
+           text-transform: lowercase;
+        }
 
+        div.a {
+            text-transfrom: uppercase;
+        }
 
     28. How do I add a 1px border around my div that is dotted and black?
         < div style="border: dotted 1px black" id="mydiv">
 
     29. How do I select everything on the page? 
-        Press “Ctrl-A” on the keyboard to highlight the entire page.
+        * 
 
     30. How do I write a comment in CSS?
-        using ctrl + / we make a comment in css
+        /* comments */
 
     31. How do I find out what file I am in, when I am using the command line? 
-         ls to see were we are and then cd to find the folder
+        pwd
 
     32. Using the command line - how do I see a list of files/folders in my current folder?
         ls 
